@@ -1,0 +1,55 @@
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	.content{
+		background-image: url('../../images/bg-shorten-desktop.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-color: hsl(260, 8%, 14%);
+		padding: 3rem;	
+		border-radius: 10px;
+		form{
+			width: 100%;
+		}
+		input{
+			border: 0;
+			width: 35vw;
+			height: 3rem;
+			margin: 0 1rem;
+			border-radius:10px;
+			padding: 0 0.5em;
+			font-size: 1em;
+		}
+		button{
+			background-color: hsl(180, 66%, 49%);
+			color: #fff;
+			border: 0;
+			padding: 0 2em;
+			height: 3rem;
+			border-radius:10px;
+
+			cursor: pointer;
+			
+			&:hover {
+				opacity: 60%;
+			}
+		}
+		.show{
+			padding: 2rem 0 0 0;
+			color: hsl(0, 0%, 75%);
+		}
+		.copy{
+			background-color: rgba(255, 255, 255, 0);
+			margin: 0 1rem;
+			font-size: .7rem;
+			border: 1px dashed hsl(0, 0%, 75%);
+			padding: .2rem;
+			height: unset;
+			border-radius: 0;
+		}
+	}
+}
+	
