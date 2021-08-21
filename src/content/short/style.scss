@@ -27,7 +27,6 @@
 			padding: 0 2em;
 			height: 3rem;
 			border-radius:10px;
-
 			cursor: pointer;
 			
 			&:hover {
@@ -38,6 +37,10 @@
 		}
 		.show{
 			padding: 2rem 0 0 0;
+
+			a{
+				color: #000;
+			}
 		}
 		.copy{
 			background-color: rgba(255, 255, 255, 0);
