@@ -4,11 +4,7 @@
 	align-items: center;
 	width: 100%;
 	.content{
-		background-image: url('../../images/bg-shorten-desktop.svg');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		background-color: hsl(260, 8%, 14%);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;	
 		padding: 3rem;	
 		border-radius: 10px;
 		form{
@@ -22,10 +18,11 @@
 			border-radius:10px;
 			padding: 0 0.5em;
 			font-size: 1em;
+			background-color: #F2F2F2;
 		}
 		button{
-			background-color: hsl(180, 66%, 49%);
-			color: #fff;
+			background-color: #F2F2F2;
+			color: #000;
 			border: 0;
 			padding: 0 2em;
 			height: 3rem;
@@ -39,7 +36,6 @@
 		}
 		.show{
 			padding: 2rem 0 0 0;
-			color: hsl(0, 0%, 75%);
 		}
 		.copy{
 			background-color: rgba(255, 255, 255, 0);
@@ -51,5 +47,22 @@
 			border-radius: 0;
 		}
 	}
+}
+
+@media (max-width: 720px) {
+  form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	input{
+		margin: 1em 0.5em;
+		width: 90vw;
+	}
+	button{
+		margin: 3em 0 0 0;
+	}
+
 }
 	

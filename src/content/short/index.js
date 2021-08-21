@@ -14,14 +14,13 @@ const Short = () => {
 	})
 
 	const handleSubmit = (e) => {
-		setUrlSrt({ url: 'Waiting...' })
+		setUrlSrt({ url: 'Shortening...' })
 		api.get(`shorten?url=${urlInfo.fullUrl}`)
 			.then((response) => {
 				setUrlSrt({
 					url: response.data.result.short_link
 				})
 			})
-
 		e.preventDefault();
 	}
 
@@ -58,7 +57,7 @@ const Short = () => {
 						</span>
 						{urlSrt.url !== 'Copied to clipboard' && (
 							<div>
-								{urlSrt.url !== 'Waiting...' && (
+								{urlSrt.url !== 'Shortening...' && (
 									<CopyClipboard text={urlSrt.url}>
 										<button className='copy' onClick={clear}>Copy</button>
 									</CopyClipboard>
